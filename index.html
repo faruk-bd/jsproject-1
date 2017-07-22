@@ -1,0 +1,265 @@
+<!doctype html>
+<!--Alltogether bootstrap-3 html-5 boilerplate fontawesome
+Author: Faruk Ahmed
+Email:webmanage489@gmail.com
+URL:http://ahmedfaruk.com
+-->
+
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>JSproject</title>
+    <meta name="description" content="This is a website using wordpress">
+    <meta name="keywords" content="Web design, Web develpoment, SEO, SMM,Wordpress,Internet,WEb">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--for icon at tap-->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" type="image/x-icon">
+    <!-- Place favicon.ico in the root directory -->
+    <!--animation-->
+    <link href="animate/animate.css" rel="stylesheet" type="text/css" />
+    <!--bootstrap intregration css-->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--boilerplate html 5 intregration-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js" type="text/javascript"></script>
+
+    <!--fontawesome intregration-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--css add in html-->
+    <link href="css/media.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!--header part start-->
+    <section>
+        <div class="container">
+            <div class="row header-bg">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                 <span class="sr-only">Toggle navigation</span>
+                                 <span class="icon-bar"></span>
+                                 <span class="icon-bar"></span>
+                             </button>
+                                <a class="navbar-brand" href="#">FARUK@hmed</a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav nav-tabs">
+                                    <li><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">My work</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Contact Me</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--header part end-->
+    <!--Search-bar part start-->
+    <section>
+        <div class="container">
+            <div class="searchbar">
+                <form onsubmit="submitFn(this, event);">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search" />
+                            <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                        </div>
+                        <span class="close" onclick="searchToggle(this, event);"></span>
+                        <div class="result-container">
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Search-bar part end-->
+
+    <!--Banner part start-->
+    <section>
+        <div class="container">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/img-1.jpg" alt="missing">
+                        <div class="carousel-caption">
+                            <h2>“First solve the problem. Then, write the code.” 
+                            </h2>
+                            <p>― Waseem Latif </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/img-2.jpg" alt="missing">
+                        <div class="carousel-caption">
+                            <h2>“Think twice, code once.”
+                            </h2>
+                            <p>― Alan Kay</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/img-3.jpg" alt="missing">
+                        <div class="carousel-caption">
+                            <h2> “Talk is cheap. Show me the code.”</h2>
+                            <p>― Martin Fowler</p>
+                        </div>
+                    </div>
+                    ...
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--Banner part end-->
+<!--    service part start-->
+    <section>
+        <div class="text">
+            <h1 class="services">MY SERVICES</h1>
+        </div>
+        <div class="container">
+            <div class="row service-wrapper ">
+                <div class="col-xs-6 col-md-3 width-fix-2">
+                    <a href="#" class="thumbnail">
+                        <img src="images/wb-1.jpg" alt="missing">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3 width-fix-2">
+                    <a href="#" class="thumbnail">
+                        <img src="images/wb-2.jpg" alt="missing">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3 width-fix-2">
+                    <a href="#" class="thumbnail">
+                        <img src="images/wb-3.jpg" alt="missing">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3 width-fix-2">
+                    <a href="#" class="thumbnail">
+                        <img src="images/wb-4.jpg" alt="missing">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+<!--service part end-->
+
+<!--product part start-->
+<section>
+   <div class="text">
+       <h2 class="services">PRODUCT'S DEMO</h2>
+       <h4 class="services">you can have your own website like these with cheap price.... </h4>
+   </div>
+    <div class="container">
+        <div class="row product-wrapper">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 width-fix">
+                <img src="images/product-1.jpg" alt="missing">
+            </div>
+                      <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 width-fix">
+                <img src="images/product-2.jpg" alt="missing">
+            </div>
+                      <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 width-fix">
+                <img src="images/product-3.jpg" alt="missing">
+            </div>
+                      <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 width-fix">
+                <img src="images/product-4.jpg" alt="missing">
+            </div>
+                      <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 width-fix">
+                <img src="images/product-5.jpg" alt="missing">
+            </div>
+                      <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 width-fix ">
+                <img src="images/product-6.jpg" alt="missing">
+            </div>
+        </div>
+    </div>
+</section>
+<!--product part end-->
+
+<!--footer part start-->
+<section>
+    <div class="container">
+        <div class="row footer-bg">
+            <h3 class="copyright">Copyright © 2017 | Faruk Ahmed </h3>
+        </div>
+    </div>
+</section>
+<!--footer part end-->
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+
+        </script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--
+  <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
+-->
+</body>
+
+</html>
